@@ -1,0 +1,11 @@
+services:
+  website:
+    container_name: alakhpc.com
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+networks:
+  default:
+    name: nginx
+    external: true

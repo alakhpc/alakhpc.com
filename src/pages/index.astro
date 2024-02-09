@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HighlightedLink from "../components/HighlightedLink.astro";
+---
+
+<Layout title="Alakh." description="My short personal website :)">
+  <main class="m-10 flex flex-col gap-10 md:m-20">
+    <div class="text-5xl md:text-6xl">Hi, I&apos;m Alakh</div>
+    <div class="flex flex-col gap-6 text-lg md:text-xl">
+      <div class="flex flex-col gap-2">
+        <div>
+          <span>
+            I&apos;m currently studying Software Engineering at the{" "}
+          </span>
+          <HighlightedLink href="https://uwaterloo.ca">
+            University of Waterloo
+          </HighlightedLink>
+        </div>
+
+        <div>
+          <span>Check out some of my work on my</span>
+          <HighlightedLink href="https://github.com/alakhpc">
+            GitHub
+          </HighlightedLink>
+        </div>
+      </div>
+
+      <div>
+        <span>You can reach out to me by</span>
+        <HighlightedLink href="mailto:alakhpc@gmail.com">email</HighlightedLink>
+      </div>
+
+      <div>
+        <HighlightedLink href="/resume.pdf">Resume</HighlightedLink>
+      </div>
+    </div>
+  </main>
+</Layout>

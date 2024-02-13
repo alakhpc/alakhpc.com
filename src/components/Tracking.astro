@@ -1,0 +1,22 @@
+---
+declare global {
+  interface Window {
+    counterscale: {
+      q: string[][];
+    };
+  }
+}
+---
+
+<script>
+  (function () {
+    window.counterscale = {
+      q: [["set", "siteId", "alakhpc.com"], ["trackPageview"]],
+    };
+  })();
+</script>
+<script
+  is:inline
+  defer
+  id="counterscale-script"
+  src="https://counterscale.alakhpc.workers.dev/tracker.js"></script>
